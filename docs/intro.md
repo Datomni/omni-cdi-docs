@@ -36,4 +36,4 @@ Omni Customer Data Infrastructure (CDI) is a primarily open-source platform for 
 3. Start processing real-time data flows
 4. Add ETL micro-applications as needed (e.g., Google Search Console integration)
 
-For deployment assistance or questions, [schedule a consultation](https://calendly.com/datomni-consulting/).
+For deployment assistance or questions, [schedule a consultation](https://www.datomni.com/contact/).

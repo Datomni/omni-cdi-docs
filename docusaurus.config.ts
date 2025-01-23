@@ -71,7 +71,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://calendly.com/datomni-consulting/',
+          href: 'https://www.datomni.com/contact',
           label: 'Schedule a Proof of Concept setup',
           position: 'right', // or 'left' if you want it on the left side
         },

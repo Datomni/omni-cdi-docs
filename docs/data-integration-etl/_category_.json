@@ -1,5 +1,5 @@
 {
-    "label": "Data ingestion via ETL",
+    "label": "ETL/ELT",
     "position": 4,
     "link": {
       "type": "generated-index",

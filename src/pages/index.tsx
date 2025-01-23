@@ -45,7 +45,7 @@ function HomepageHeader() {
               <a href="https://datomni.com" target="_blank" rel="noopener noreferrer" className={styles.trustedByItem}>
                 <div className={styles.productBadge}>FLAGSHIP BRAND</div>
                 <span className={styles.productName}>Datomni</span>
-                <span className={styles.productDesc}>Enterprise Customer Data Infrastructure</span>
+                <span className={styles.productDesc}>Customer Data Infrastructure</span>
                 <span className={styles.productMeta}>Products • Services • Solutions</span>
               </a>
               <div className={styles.divider}>
@@ -53,9 +53,9 @@ function HomepageHeader() {
               </div>
               <a href="https://performance.datomni.com" target="_blank" rel="noopener noreferrer" className={styles.trustedByItem}>
                 <div className={styles.productBadge}>PERFORMANCE SUITE</div>
-                <span className={styles.productName}>Datomni Performance</span>
-                <span className={styles.productDesc}>Datomni Performance Growth</span>
-                <span className={styles.productMeta}>Analytics • Activation • Growth</span>
+                <span className={styles.productName}>Omni Performance</span>
+                <span className={styles.productDesc}>Growth Performance Marketing</span>
+                <span className={styles.productMeta}>ROI • Growth • Efficiency</span>
               </a>
             </div>
           </div>
@@ -67,7 +67,7 @@ function HomepageHeader() {
             </Link>
             <Link
               className={clsx('button button--lg', styles.secondaryButton)}
-              href="https://calendly.com/datomni-consulting/">
+              href="https://www.datomni.com/contact">
               Schedule Proof of Concept
             </Link>
           </div>
@@ -114,7 +114,7 @@ function Footer() {
           <h3 className={styles.footerTitle}>Community</h3>
           <ul className={styles.footerLinks}>
             <li className={styles.footerLink}>
-              <a href="https://calendly.com/datomni-consulting/">Schedule Demo</a>
+              <a href="https://www.datomni.com/contact">Schedule Proof of Concept</a>
             </li>
             <li className={styles.footerLink}>
               <a href="https://www.meetup.com/The-10X-Data-driven-Marketing-Warsaw">Meetup</a>

@@ -148,7 +148,7 @@ The Meta API Server-Side Tag enables direct server-to-server communication with 
 
 ### 1. Tag Setup
 
-1. Download the Omni Meta API tag template from the Datomni Tag Gallery
+1. Download the Omni Meta API tag template from [the GitHub repo](https://github.com/Datomni/omni-activation-gtmss-meta-api)
 2. Import the template into your server-side GTM container
 3. Create a new tag using the imported template
 4. Configure the basic settings:
@@ -264,8 +264,17 @@ Enable debug mode to access:
 - [Server-Side GTM Guide](https://developers.google.com/tag-platform/tag-manager/server-side)
 
 ## License
-Copyright © 2024 Datomni Inc.
-All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 
 ## Examples
 

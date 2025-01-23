@@ -79,7 +79,7 @@ Key configuration files:
 
 ## Contributing
 
-For questions or assistance with Omni CDI implementation, please [schedule a consultation](https://calendly.com/datomni-consulting/).
+For questions or assistance with Omni CDI implementation, please [schedule a consultation](https://www.datomni.com/contact).
 
 ## License
 

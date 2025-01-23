@@ -1,0 +1,9 @@
+{
+    "label": "Server-side GTM",
+    "position": 3,
+    "link": {
+      "type": "generated-index",
+      "description": "Setup and configuration of server-side Google Tag Manager in Omni CDI."
+    }
+}
+  

@@ -1,0 +1,8 @@
+{
+  "label": "Activation",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Documentation for the activation layer of Omni CDI, including server-side GTM setup and configuration."
+  }
+}

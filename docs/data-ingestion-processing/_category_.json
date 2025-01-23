@@ -1,0 +1,9 @@
+{
+    "label": "Event ingestion, enrichment & processing",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "description": "Key elements to fully understand the data collection layer in the Omni Customer Data Infrastructure, facilitated by the Dockerized event capture and enrichment platform called Omni Analytics."
+    }
+  }
+  

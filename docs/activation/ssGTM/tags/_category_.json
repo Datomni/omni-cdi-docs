@@ -1,0 +1,9 @@
+{
+    "label": "Tags",
+    "position": 1,
+    "link": {
+      "type": "generated-index",
+      "description": "Configuration and management of tags in server-side GTM."
+    }
+}
+  

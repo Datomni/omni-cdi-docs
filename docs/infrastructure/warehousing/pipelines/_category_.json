@@ -1,0 +1,9 @@
+{
+    "label": "End-to-end pipelines",
+    "position": 3,
+    "link": {
+      "type": "generated-index",
+      "description": "In this section, we outline the end-to-end warehousing pipelines within Omni's Customer Data Infrastructure (CDI)."
+    }
+  }
+  

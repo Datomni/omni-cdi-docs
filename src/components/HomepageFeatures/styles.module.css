@@ -1,0 +1,193 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+  background: linear-gradient(180deg, var(--ifm-color-emphasis-100) 0%, var(--ifm-color-white) 100%);
+}
+
+.featureCard {
+  height: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+}
+
+.featureImageContainer {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.featureSvg {
+  height: 150px;
+  width: 150px;
+}
+
+.featureContent {
+  text-align: center;
+}
+
+.featureDescription {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.componentSection {
+  margin-top: 4rem;
+  padding: 2rem 0;
+}
+
+.componentHeader {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.componentDescription {
+  font-size: 1.2rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 2rem;
+}
+
+.componentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.componentCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.componentCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.componentIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.componentCard h3 {
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+}
+
+.componentCard p {
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.componentDetails {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  padding-top: 1rem;
+}
+
+.componentDetails li {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--ifm-color-emphasis-800);
+  font-size: 0.9rem;
+}
+
+.componentDetails li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--ifm-color-primary);
+}
+
+.comingSoonBadge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-dark) 100%);
+  color: white;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  border-radius: 0 12px 0 12px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: none;
+  border-right: none;
+}
+
+.comingSoonComponent {
+  opacity: 0.85;
+  filter: grayscale(15%);
+  transition: all 0.3s ease;
+}
+
+.componentCard:hover .comingSoonComponent {
+  opacity: 0.95;
+  filter: grayscale(5%);
+}
+
+.componentCard:hover .comingSoonBadge {
+  background: linear-gradient(135deg, var(--ifm-color-primary-light) 0%, var(--ifm-color-primary) 100%);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust for dark mode */
+[data-theme='dark'] .comingSoonBadge {
+  background: linear-gradient(135deg, var(--ifm-color-primary-darker) 0%, var(--ifm-color-primary) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: none;
+  border-right: none;
+}
+
+[data-theme='dark'] .componentCard:hover .comingSoonBadge {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-lighter) 100%);
+}
+
+.componentContent {
+  position: relative;
+  z-index: 0;
+}
+
+@media screen and (max-width: 996px) {
+  .componentGrid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .componentCard {
+    padding: 1.5rem;
+  }
+
+  .comingSoonBadge {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+  }
+}

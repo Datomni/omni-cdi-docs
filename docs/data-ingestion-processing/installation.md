@@ -2,18 +2,17 @@
 
 Omni Analytics is a Dockerized application primarily intended for deployment on your own cloud infrastructure to fulfill one of the tenets of Omni CDI: maximum data ownership. This guide will help you set up your own platform deployment using Docker and Terraform. Please note that Omni Analytics is currently not licensed as an open-source platform, so the guide below will only be relevant if we're collaborating.
 
-## Table of contents
+## Table of Contents
 
 - [Docker Guide](#docker-guide)
   - [Introduction](#introduction)
   - [Quick Start](#quick-start)
   - [Production Deployment](#production-deployment)
   - [Local Deployment](#local-deployment)
-  - [Docker File](#docker-file)
+  - [Dockerfile](#dockerfile)
 - [Terraform Guide](#terraform-guide)
-  - [Quick Start](#quick-start-1)
+  - [Quick Start](#terraform-quick-start)
   - [Repository](#repository)
-  - [Create AWS Infrastructure](#create-aws-infrastructure)
   - [Prepare Existing Instance](#prepare-existing-instance)
   - [Domain Assignment](#domain-assignment)
   - [Project Deployment](#project-deployment)

@@ -15,6 +15,7 @@ type ComponentItem = {
   icon: string;
   details: string[];
   comingSoon?: boolean;
+  isLive?: boolean;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -92,7 +93,7 @@ const ComponentList = [
           'Profile merging rules',
           'Custom identity resolution logic'
         ],
-        comingSoon: true
+        isLive: true
       },
       {
         title: 'Data Collection & Processing',
@@ -233,6 +234,9 @@ function ComponentSection({title, description, components}) {
           <div key={idx} className={styles.componentCard}>
             {component.comingSoon && (
               <div className={styles.comingSoonBadge}>Coming Soon</div>
+            )}
+            {component.isLive && (
+              <div className={styles.liveBadge}>🎉 Now Live!</div>
             )}
             <div className={clsx(
               styles.componentContent,

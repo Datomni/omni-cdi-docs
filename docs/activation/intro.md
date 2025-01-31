@@ -13,6 +13,4 @@ The activation layer in Omni CDI enables you to take action on your collected an
 - **Real-time Activation**: Immediate data distribution to downstream tools
 - **Privacy Controls**: Full control over data sharing and compliance
 
-## Architecture
-
 The activation layer sits between your data collection infrastructure and your marketing/analytics tools, ensuring proper data transformation and distribution while maintaining performance and privacy.

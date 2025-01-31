@@ -103,6 +103,59 @@ const config: Config = {
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Products',
+          items: [
+            {
+              label: 'Documentation',
+              to: '/docs/intro',
+            },
+            {
+              label: 'Enterprise Solutions',
+              href: 'https://datomni.com',
+            },
+            {
+              label: 'Performance Suite',
+              href: 'https://performance.datomni.com',
+            },
+          ],
+        },
+        {
+          title: 'Resources',
+          items: [
+            {
+              label: 'Infrastructure',
+              to: '/docs/infrastructure/intro',
+            },
+            {
+              label: 'Activation',
+              to: '/docs/activation/intro',
+            },
+            {
+              label: 'Reporting',
+              to: '/docs/reporting/intro',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Schedule Proof of Concept',
+              href: 'https://www.datomni.com/contact',
+            },
+            {
+              label: 'Meetup',
+              href: 'https://www.meetup.com/The-10X-Data-driven-Marketing-Warsaw',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Datomni LLC, AI EATS SOFTWARE LLC, Forward Thinking Capital LLC.<br/>All rights reserved. Warsaw, Berlin, Kyiv.<br/>Leadership: Maciej Miętek (CEO) <a href="https://www.linkedin.com/in/macmietek/" target="_blank">LinkedIn</a> | <a href="https://macmietek.com" target="_blank">Website</a><br/>Built with Docusaurus.`,
+    },
   } satisfies Preset.ThemeConfig,
 };
 

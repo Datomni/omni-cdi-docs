@@ -77,70 +77,6 @@ function HomepageHeader() {
   );
 }
 
-function Footer() {
-  return (
-    <footer className={styles.footerSection}>
-      <div className={styles.footerOverlay} />
-      <div className={styles.footerContent}>
-        <div className={styles.footerColumn}>
-          <h3 className={styles.footerTitle}>Products</h3>
-          <ul className={styles.footerLinks}>
-            <li className={styles.footerLink}>
-              <a href="/docs/intro">Documentation</a>
-            </li>
-            <li className={styles.footerLink}>
-              <a href="https://datomni.com">Enterprise Solutions</a>
-            </li>
-            <li className={styles.footerLink}>
-              <a href="https://performance.datomni.com">Performance Suite</a>
-            </li>
-          </ul>
-        </div>
-        <div className={styles.footerColumn}>
-          <h3 className={styles.footerTitle}>Resources</h3>
-          <ul className={styles.footerLinks}>
-            <li className={styles.footerLink}>
-              <a href="/docs/infrastructure/intro">Infrastructure</a>
-            </li>
-            <li className={styles.footerLink}>
-              <a href="/docs/activation/intro">Activation</a>
-            </li>
-            <li className={styles.footerLink}>
-              <a href="/docs/reporting/intro">Reporting</a>
-            </li>
-          </ul>
-        </div>
-        <div className={styles.footerColumn}>
-          <h3 className={styles.footerTitle}>Community</h3>
-          <ul className={styles.footerLinks}>
-            <li className={styles.footerLink}>
-              <a href="https://www.datomni.com/contact">Schedule Proof of Concept</a>
-            </li>
-            <li className={styles.footerLink}>
-              <a href="https://www.meetup.com/The-10X-Data-driven-Marketing-Warsaw">Meetup</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className={styles.footerBottom}>
-        <div className={styles.footerSocial}>
-          <a href="https://datomni.com" className={styles.footerSocialLink}>
-            <span>🌐</span>
-          </a>
-          <a href="https://www.linkedin.com/company/datomni" className={styles.footerSocialLink}>
-            <span>💼</span>
-          </a>
-        </div>
-        <p className={styles.copyright}>
-          Copyright © {new Date().getFullYear()} Datomni LLC, AI EATS SOFTWARE LLC, Forward Thinking Capital LLC.<br/>
-          All rights reserved. Warsaw, Berlin, Kyiv.<br/>
-          Built with Docusaurus.
-        </p>
-      </div>
-    </footer>
-  );
-}
-
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -151,7 +87,6 @@ export default function Home(): JSX.Element {
       <main>
         <HomepageFeatures />
       </main>
-      <Footer />
     </Layout>
   );
 }

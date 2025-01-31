@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Installation
 
-Omni Analytics is a Dockerized application primarily intended for deployment on your own cloud infrastructure to fulfill one of the tenets of Omni CDI: maximum data ownership. This guide will help you set up your own platform deployment using Docker and Terraform. Please note that Omni Analytics is currently not licensed as an open-source platform, so the guide below will only be relevant if we're collaborating.
+Omni Identity is a Dockerized application primarily intended for deployment on your own cloud infrastructure to fulfill one of the tenets of Omni CDI: maximum data ownership. This guide will help you set up your own identity resolution platform using Docker and Terraform. Please note that Omni Identity is currently not licensed as an open-source platform, so the guide below will only be relevant if we're collaborating.
 
 ## Table of contents
 
@@ -18,7 +18,7 @@ Omni Analytics is a Dockerized application primarily intended for deployment on 
 ## Docker Guide
 ### Introduction
 
-Omni Analytics uses Docker containers for easy deployment and scalability. This guide will walk you through the setup process for both development and production environments.
+Omni Identity uses Docker containers for easy deployment and scalability. This guide will walk you through the setup process for both development and production environments.
 
 ### Quick Start
 
@@ -28,7 +28,7 @@ Omni Analytics uses Docker containers for easy deployment and scalability. This 
     ```
     Configure the following variables in .env:
     ```
-    APP_NAME=Identifier
+    APP_NAME=OmniIdentity
     APP_ENV=production
     APP_KEY=base64:z2YuIA8KN5Dv8RNWkcoGlDPcVQPhD237VaDJayyuHkM=
     APP_DEBUG=false
@@ -90,7 +90,7 @@ Follow these steps for a production deployment:
 
 3. Create Admin User
     ```bash
-    docker-compose exec app php artisan orchid:admin admin admin@identifier.app pass
+    docker-compose exec app php artisan orchid:admin admin admin@omni-identity.app pass
     ```
 
 4. Storage Configuration
@@ -103,7 +103,7 @@ Follow these steps for a production deployment:
 5. SSL Configuration
     ```bash
     sudo apt-get install certbot
-    sudo certbot --apache -d identity.onedaydoorsandclosets.com
+    sudo certbot --apache -d identity.yourdomain.com
     ```
 
 6. Rebuild and Start
@@ -113,12 +113,12 @@ Follow these steps for a production deployment:
 
 #### Production Considerations
 
-- **Scaling**: For multiple instances:
+- **Scaling**: For handling high volumes of identity resolution requests:
   ```bash
   docker-compose up --scale app=3 -d
   ```
 - **Security**: Implement fail2ban and proper file permissions
-- **Monitoring**: Consider using Prometheus or Grafana
+- **Monitoring**: Consider using Prometheus or Grafana for tracking identity resolution metrics
 - **Logging**: Access container logs:
   ```bash
   docker-compose logs -f app

@@ -289,6 +289,10 @@ curl -X POST https://identity.clientname.com/api/v1/identifier \
 - The action field includes version and event type information
 - Platform information helps track the source of each interaction
 
+:::tip Identity Resolution in Omni Activation
+Both the journal retrieval and standard identity resolution are key components of the enrichment process in Omni Activation tags. You can learn more about how identity enrichment fits into the tag execution flow in our [Activation Motivation documentation](/docs/activation/motivation). For a detailed implementation example showing both identity resolution methods in action, check out our [open-source Meta Conversion API tag](/docs/activation/ssGTM/tags/meta-api).
+:::
+
 ## Error Handling
 
 The API uses standard HTTP response codes:

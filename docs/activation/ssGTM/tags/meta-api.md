@@ -8,7 +8,77 @@ A powerful server-side GTM tag template for sending data to Meta (Facebook) Conv
 
 ## Overview
 
-The Meta API Server-Side Tag enables direct server-to-server communication with Meta's Conversion API while maximizing conversion matching through Omni Identity resolution. This tag supports full-funnel conversion tracking and provides comprehensive payload enrichment capabilities.
+The Meta API Server-Side Tag enables direct server-to-server communication with Meta's Conversion API, maximizing conversion matching through Omni Identity resolution. This tag supports full-funnel conversion tracking and provides comprehensive payload enrichment capabilities. You can download the tag immediately from the [GitHub repo](https://github.com/Datomni/omni-activation-gtmss-meta-api), but be sure to read the documentation to understand how the tag works.
+
+## Execution specifics
+
+Below is a diagram showing how the Omni Meta API tag applies the general execution flow of our tags, including steps such as Omni Identity Resolution and data property processing. 
+
+```mermaid
+%% Direction and theme
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'labelBackground': '#ffffff00',
+    'labelBackgroundOpacity': '0',
+    'fontFamily': 'Poppins, sans-serif'
+  }
+}}%%
+
+graph TD
+  %% Main Execution Path
+  A[Tag Execution Initialized] --> B[Tag Init Timestamp]
+  B --> D[Data Properties Processing]
+  D --> E[Assemble Payload with event_data & user_data]
+  E --> F[Payload Validation - hash validity, property dependencies]
+  
+  %% Enrichment (Single Step)
+  E -.->|Omni Identity| H[Enrichment: Omni Identity]
+  H --> F
+  
+  %% Validation & Results
+  F ==>|Success| O[Payload Validation Successful]
+  F -.-x ERR1>Validation Error]
+  ERR1 --> MON1[Omni Error Monitor]
+  ERR1 --> CMON1[Omni Client Monitor]
+  
+  O --> P[Formatting Payload into Array for Dispatch]
+  P ==>|Success| Q[Payload Formatting Complete]
+  P -.-x ERR2>Formatting Error]
+  ERR2 --> MON2[Omni Error Monitor]
+  ERR2 --> CMON2[Omni Client Monitor]
+  
+  Q --> R[API Dispatch: Meta Conversion API]
+  R --> T[API Request]
+  
+  %% Response Handling & Monitoring
+  T ==>|200 OK| U[Request Successful]
+  T -.-x ERR3>API Error]
+  ERR3 --> MON3[Omni Error Monitor]
+  ERR3 --> CMON3[Omni Client Monitor]
+  
+  U ==> W[Tag Execution End Timestamp]
+  
+  %% Success Monitoring
+  W -->|Log| M1[Omni Monitor: Success]
+  R -->|Log| M3[Omni Monitor: Response]
+  
+  %% Styling
+  classDef main fill:#f9f,stroke:#333,stroke-width:2px;
+  classDef step fill:#dfd,stroke:#333,stroke-width:2px;
+  classDef enrichment fill:#ff0,stroke:#333,stroke-width:2px;
+  classDef monitoring fill:#bbf,stroke:#333,stroke-width:2px;
+  classDef error stroke:#f66,stroke-width:2px;
+  
+  class A,B,D,E,F,O,P,Q,R,T,U,W main;
+  class H enrichment;
+  class M1,M3,MON1,MON2,MON3,CMON1,CMON2,CMON3 monitoring;
+  class ERR1,ERR2,ERR3 error;
+  
+  linkStyle default stroke:#333,stroke-width:2px;
+
+```
+
 
 ## Key Features
 

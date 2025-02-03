@@ -2,8 +2,9 @@
 sidebar_position: 3
 ---
 
-
 # Installation
+
+> 👋 Hey there! Before you jump into the installation, [ping us for a quick call ](https://www.datomni.com/contact) - we'll get you set up with access to our Docker images. We're excited to help you get started, but please note that our availability is limited!
 
 Omni ETL provides a separate Dockerized application for each data source. While the installation process remains consistent across all applications, minor custom steps may be required due to special needs in the configuration of individual data sources. Currently all ETL apps write to BigQuery instances. This document will guide you through the deployment of an Omni ETL instance, providing links to tool-specific configurations as necessary.
 <!-- 

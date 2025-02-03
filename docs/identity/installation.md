@@ -3,6 +3,8 @@ sidebar_position: 3
 ---
 
 # Installation
+ 
+> 👋 Hey there! Before you jump into the installation, [ping us for a quick call ](https://www.datomni.com/contact) - we'll get you set up with access to our Docker images. We're excited to help you get started, but please note that our availability is limited!
 
 Omni Identity is a Dockerized application primarily intended for deployment on your own cloud infrastructure to fulfill one of the tenets of Omni CDI: maximum data ownership. This guide will help you set up your own identity resolution platform using Docker and Terraform. Please note that Omni Identity is currently not licensed as an open-source platform, so the guide below will only be relevant if we're collaborating.
 

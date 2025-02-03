@@ -4,8 +4,6 @@ sidebar_position: 1
 
 # Introduction
 
-> 👋 Welcome! This is technical documentation intended for developers and system administrators implementing Omni Analytics. For business features, pricing, and product overview, please visit our [product page](https://www.datomni.com/products/omni-analytics).
-
 The event capture and ingestion engine is the heart of your customer data infrastructure. It processes events in real-time and directs them to specific consumers or warehouses. In the case of Omni CDI, this role is fulfilled by Omni Analytics. Omni Analytics converts unstructured or semi-structured raw data from various sources into enriched, well-structured payloads for downstream consumption. Operating as a Dockerized application, Omni Analytics can be easily deployed in your cloud environment.
 
 ## Key Features

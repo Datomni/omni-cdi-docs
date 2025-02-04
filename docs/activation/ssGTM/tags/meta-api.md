@@ -2,11 +2,47 @@
 sidebar_position: 1
 ---
 
-# Meta API Server-Side Tag
+# Omni Meta API Tag
 
 A powerful server-side GTM tag template for sending data to Meta (Facebook) Conversion API with advanced identity resolution and conversion matching capabilities.
 
 ## Overview
+
+One of the key challenges in Meta Conversion API is consistently reporting conversions along the customer lifecycle, especially through online to offline channels. What we see currently is that companies struggle with this, ending up with a number of key conversions that are completely invisible to the Meta ecosystem, and not being able to run ad optimization for them. A diagram illustrating this problem is shown below. 
+
+<div align="center">
+
+```mermaid
+%% Direction and theme
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'labelBackground': '#ffffff00',
+    'labelBackgroundOpacity': '0',
+    'fontFamily': 'Poppins, sans-serif'
+  }
+}}%%
+
+graph TD
+    A[User Clicks Ad - Tracked] --> B[Website Visit - Tracked]
+    B --> C[Lead Generation - Tracked]
+    C --> D[User Added to CRM - Not Tracked]
+    
+    D --> E[User Revisits Website - Tracked]
+    E --> F[Downloads Whitepaper - Tracked]
+    F --> G[Key CRM Activity Logged - Not Tracked]
+    
+    G --> H[Downloads Pricelist - Not Tracked]
+    H --> I[Decision to Purchase Logged in CRM - Not Tracked]
+
+    classDef tracked fill:#c9f8c9,stroke:#3b9e3b,stroke-width:2px;
+    classDef notTracked fill:#fdd,stroke:#f00,stroke-width:2px;
+    
+    class A,B,C,E,F tracked;
+    class D,G,H,I notTracked;
+```
+
+</div>
 
 The Meta API Server-Side Tag enables direct server-to-server communication with Meta's Conversion API, maximizing conversion matching through Omni Identity resolution. This tag supports full-funnel conversion tracking and provides comprehensive payload enrichment capabilities. You can download the tag immediately from the [GitHub repo](https://github.com/Datomni/omni-activation-gtmss-meta-api), but be sure to read the documentation to understand how the tag works.
 

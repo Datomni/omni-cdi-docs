@@ -2,7 +2,7 @@
 
 > 👋 Hey there! Before you jump into the installation, [ping us for a quick call ](https://www.datomni.com/contact) - we'll get you set up with access to our Docker images. We're excited to help you get started, but please note that our availability is limited!
 
-Omni Analytics is a Dockerized application primarily intended for deployment on your own cloud infrastructure to fulfill one of the tenets of Omni CDI: maximum data ownership. This guide will help you set up your own platform deployment using Docker and Terraform. Please note that Omni Analytics is currently not licensed as an open-source platform, so the guide below will only be relevant if we're collaborating.
+Omni Hub is a Dockerized application primarily intended for deployment on your own cloud infrastructure to fulfill one of the tenets of Omni CDI: maximum data ownership. This guide will help you set up your own platform deployment using Docker and Terraform. Please note that Omni Hub is currently not licensed as an open-source platform, so the guide below will only be relevant if we're collaborating.
 
 ## Table of Contents
 
@@ -47,7 +47,7 @@ By default, the script uses the `docker-compose.yml` file to set up the applicat
 ./installer.sh docker-compose.local.yml
 ```
 
-The `installer.sh` file is a shell script that automates the setup and deployment of your Docker-based Omni Analytics application. It performs the following steps:
+The `installer.sh` file is a shell script that automates the setup and deployment of your Docker-based Omni Hub application. It performs the following steps:
 
 - Accepts an optional argument specifying the Docker Compose file to use (defaults to `docker-compose.yml`).
 - Runs `docker-compose up -d` to start services defined in the Docker Compose file in detached mode.
@@ -63,7 +63,7 @@ This script simplifies the process of setting up and deploying your application,
 
 ### Production deployment
 
-The `docker-compose.yml` file defines and manages multi-container Docker applications. Here's a brief description of the services defined in your Omni Analytics instance `docker-compose.yml` file:
+The `docker-compose.yml` file defines and manages multi-container Docker applications. Here's a brief description of the services defined in your Omni Hub instance `docker-compose.yml` file:
 
 - `app`: This service is built from the Dockerfile located at `./docker/php/Dockerfile`. It uses
   the `api-center-opv2/app:latest` image and depends on the `pgsql` and `redis` services. The application's code is

@@ -20,13 +20,13 @@ graph TD
   %% PHASE 1: DATA TRACKING
   subgraph "PHASE 1: DATA TRACKING"
     A1["Client-side Tracking (Landing Page)"] -->|Event Data| B1["Omni Activation"]
-    A2["Server-side Tracking (Backend)"] -->|Event Data| C1["Omni Analytics"]
+    A2["Server-side Tracking (Backend)"] -->|Event Data| C1["Omni Hub"]
     A3["Webhook Tracking (CRM System)"] -->|Event Data| C1
   end
 
   %% PHASE 2: DATA PROCESSING
   subgraph "PHASE 2: DATA PROCESSING"
-    C1 -->|Processed Data| P1["Omni Analytics Data Processing"]
+    C1 -->|Processed Data| P1["Omni Hub Data Processing"]
     P1 -->|Validated Data| B1
   end
 
@@ -77,7 +77,7 @@ This pattern is particularly valuable for organizations seeking to:
 - Gets customer data and updates from your CRM system
 
 #### Data Processing Layer
-- All data from your servers and CRM flows through Omni Analytics for checking and processing
+- All data from your servers and CRM flows through Omni Hub for checking and processing
 - Website events can go straight to marketing platforms when speed is important
 - Makes sure your data is accurate and complete at every step
 

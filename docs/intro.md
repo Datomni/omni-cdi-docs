@@ -36,7 +36,7 @@ Omni Customer Data Infrastructure (CDI) is a primarily open-source platform that
 
 ## Getting Started
 
-1. Deploy your Omni Analytics instance
+1. Deploy your Omni Hub instance
 2. Set up your event capture endpoints
 3. Start processing real-time data
 4. Add ETL micro-apps as needed (like Google Search Console integration)

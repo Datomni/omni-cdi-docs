@@ -25,5 +25,5 @@ For detailed setup instructions and best practices, continue reading through thi
 
 ## Dependencies
 
-The Omni Infrastructure/Warehousing pipeline powers the real-time version of the Omni Reporting pipeline, delivering rich, granular dashboards that track business growth in real time. In addition, it is designed to consume events dispatched from the collection and enrichment application, Omni Analytics, through the dedicated warehousing tags in the activation layer (GTM Server or AWS Lambda), via Omni Activation.
+The Omni Infrastructure/Warehousing pipeline powers the real-time version of the Omni Reporting pipeline, delivering rich, granular dashboards that track business growth in real time. In addition, it is designed to consume events dispatched from the collection and enrichment application, Omni Hub, through the dedicated warehousing tags in the activation layer (GTM Server or AWS Lambda), via Omni Activation.
 

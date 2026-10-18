@@ -12,7 +12,7 @@ Here's what makes it powerful:
 
 2. **Ready-to-use business metrics**: No more complicated data work. You get the metrics you need, ready to use. Want conversion rates? Revenue numbers? Customer engagement scores? We've built these for you already.
 
-The Modeling layer plugs right into your Omni CDI setup in your private cloud. It grabs the raw data from Omni Analytics and Omni Activation, and processed through Omni Warehousing, and turns it into numbers you can actually use to run your business better.
+The Modeling layer plugs right into your Omni CDI setup in your private cloud. It grabs the raw data from Omni Hub and Omni Activation, and processed through Omni Warehousing, and turns it into numbers you can actually use to run your business better.
 
 You get:
 - One place for all your business metrics

@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Installation
 
-We recommend self-hosting the server-side GTM container. This approach provides complete control over data collection and processing, and infrastructure, while maintaining independence from third-party services. It is consistently used across the entire Omni customer data infrastructure. Along with Dockerized Omni Analytics collectors and Omni Identity, it provides a chance to build a fully independent customer data infrastructure.
+We recommend self-hosting the server-side GTM container. This approach provides complete control over data collection and processing, and infrastructure, while maintaining independence from third-party services. It is consistently used across the entire Omni customer data infrastructure. Along with Dockerized Omni Hub collectors and Omni Identity, it provides a chance to build a fully independent customer data infrastructure.
 
 This guide provides step-by-step instructions for deploying server-side GTM on AWS infrastructure. Only the first step is AWS-specific, and the remaining steps are applicable to most cloud providers.
 

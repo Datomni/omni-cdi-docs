@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-The event capture and ingestion engine is the heart of your customer data infrastructure. It processes events in real-time and directs them to specific consumers or warehouses. In the case of Omni CDI, this role is fulfilled by Omni Analytics. Omni Analytics converts unstructured or semi-structured raw data from various sources into enriched, well-structured payloads for downstream consumption. Operating as a Dockerized application, Omni Analytics can be easily deployed in your cloud environment.
+The event capture and ingestion engine is the heart of your customer data infrastructure. It processes events in real-time and directs them to specific consumers or warehouses. In the case of Omni CDI, this role is fulfilled by Omni Hub. Omni Hub converts unstructured or semi-structured raw data from various sources into enriched, well-structured payloads for downstream consumption. Operating as a Dockerized application, Omni Hub can be easily deployed in your cloud environment.
 
 ## Key Features
 
@@ -14,4 +14,4 @@ The event capture and ingestion engine is the heart of your customer data infras
 
 - **Noise reduction:** Minimizes noise in unstructured events before they impact your business processes.
 
-A good way to visualize how it works is to see Omni Analytics functioning like a factory production line. Just like any other factory, it processes raw materials through steps of cleaning, refinement or enrichment, molding, packaging, and dispatch. The refined end product is then ready for further phases in the system. This is exactly what happens in your Omni Analytics instance with your event data.
+A good way to visualize how it works is to see Omni Hub functioning like a factory production line. Just like any other factory, it processes raw materials through steps of cleaning, refinement or enrichment, molding, packaging, and dispatch. The refined end product is then ready for further phases in the system. This is exactly what happens in your Omni Hub instance with your event data.
